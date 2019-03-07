@@ -29,10 +29,13 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/table.css')}}">
      <script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>
 
-    <!--[if lt IE 9]>
-        <script src="{{asset('')}}//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="{{asset('')}}//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <style>
+
+        .mainmenu-area {
+            background-color: {{$template[0]->warna_navbar}};
+        }
+
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">

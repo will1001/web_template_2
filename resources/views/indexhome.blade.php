@@ -99,10 +99,10 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdowntabel">
                         
                         @if (Route::has('register'))
-                            <a class="nav-link" href="{{ url('daftar') }}">Daftar</a>
+                            <a class="nav-link" href="{{ Route('register') }}">Daftar</a>
                         @endif
                         <div class="dropdown-divider"></div>
-                        <a class="nav-link" href="{{ url('masuk') }}">{{ __('Login') }}</a>
+                        <a class="nav-link" href="{{ Route('login') }}">{{ __('Login') }}</a>
                         <div class="dropdown-divider"></div> 
                         </div>
                     </li>

@@ -32,17 +32,6 @@ class webcontroller extends Controller
         return Excel::download(new UsersExport, 'Data Penduduk.xlsx');
     }
 
-    public function register() 
-    {
-        $template= template_parameter::all();
-        return view("auth/register",['template' =>$template]);
-    }
-
-    public function login() 
-    {
-        $template= template_parameter::all();
-        return view("auth/login",['template' =>$template]);
-    }
 
     public function bumdes()
     {

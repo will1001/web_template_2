@@ -13,8 +13,6 @@
 
 Route::get('/', 'webcontroller@indexhome');
 Route::get('/kktidakada', 'webcontroller@kktidakada');
-Route::get('/daftar', 'webcontroller@register');
-Route::get('/masuk', 'webcontroller@login');
 Route::get('/updateumur', 'admincontroller@updateumur');
 
 Route::get('/reloadtabeldatapendudukajax/{id}/{skipdata}',function($id,$skipdata)
